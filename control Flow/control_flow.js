@@ -44,6 +44,20 @@ switch (userType) {
             userCategory = "Unknown";
 }
 
-let isAuthenticated = true;
+//let isAuthenticated = true;
 
-let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+//let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+
+let employeeStatus = "Employee";
+let dietaryAccess;
+
+if (employeeStatus === "Employee") {
+    dietaryAccess = "You have access to Dietary Services!"
+} else if (employeeStatus === "Enrolled Member") {
+    dietaryAccess = "You have the highest access! Dietary Services and One-on-One with our custom dietician!"
+} else if (employeeStatus === "Subscriber") {
+    dietaryAccess = "You have partial access to our Dietary Services";
+} else {
+    dietaryAccess = "Please subscribe to our services to Receive Dietary Services!";
+}
