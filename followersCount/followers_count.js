@@ -19,5 +19,7 @@ function displayCount() {
 };
 
 function resetCount() {
-    document.getElementById('countDisplay').innerHTML='0';
+    count = 0; // Reset the count variable to 0
+    displayCount(); // Update the HTML to reflect the reset count
+    alert("Counter has been reset!");
 }
